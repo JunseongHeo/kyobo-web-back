@@ -1,0 +1,3 @@
+INSERT INTO kyobo_user(MANAGE_NO, LOGIN_ID, LOGIN_PW, NAME, ADDRESS, PHONE) VALUES('01', 'admin', '1', '관리자', '서울 강남구', '000-1111-2222');
+INSERT INTO kyobo_user(MANAGE_NO, LOGIN_ID, LOGIN_PW, NAME, ADDRESS, PHONE) VALUES('02', 'test1', '1', '사용자1', '서울 강남구', '000-1111-2223');
+INSERT INTO kyobo_user(MANAGE_NO, LOGIN_ID, LOGIN_PW, NAME, ADDRESS, PHONE) VALUES('03', 'test2', '1', '사용자2', '서울 강남구', '000-1111-2224');
