@@ -12,4 +12,6 @@ import java.util.List;
 public interface UserMapper {
 
     List<UserVO> getUserList();
+
+    UserVO getUserById(String login_id);
 }

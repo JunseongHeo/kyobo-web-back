@@ -10,7 +10,18 @@
             NAME,
             ADDRESS,
             PHONE
-        FROM
-            KYOBO_USER;
+        FROM KYOBO_USER;
+  </select>
+
+    <select id="getUserById" resultType="com.kyobo.dto.UserVO">
+        SELECT
+            MANAGE_NO
+            , LOGIN_ID
+            , LOGIN_PW
+            , NAME
+            , ADDRESS
+            , PHONE
+        FROM kyobo_user
+        WHERE LOGIN_ID = #{login_id}
   </select>
 </mapper>

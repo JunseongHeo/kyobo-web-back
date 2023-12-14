@@ -3,7 +3,6 @@ package com.kyobo.service.impl;
 import com.kyobo.dao.UserMapper;
 import com.kyobo.dto.UserVO;
 import com.kyobo.service.UserService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,5 +19,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserVO> getUserList() {
         return userMapper.getUserList();
+    }
+
+    @Override
+    public UserVO getUserById(String login_id) {
+        return userMapper.getUserById(login_id);
     }
 }

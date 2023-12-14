@@ -4,6 +4,7 @@ import com.kyobo.dto.UserVO;
 import com.kyobo.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -30,6 +31,19 @@ public class CommonController {
 
         mav.addObject("result", resultList);
         mav.addObject("result_0_name", resultList.get(0).getName());
+
+        mav.setViewName("/test");
+
+        return mav;
+    }
+
+    @GetMapping("/user/{login_id}")
+    public ModelAndView getUserById(@PathVariable String login_id) {
+        ModelAndView mav = new ModelAndView();
+        UserVO userVO = userService.getUserById(login_id);
+
+        mav.addObject("result", userVO);
+        mav.addObject("result_0_name", userVO.getName());
 
         mav.setViewName("/test");
 

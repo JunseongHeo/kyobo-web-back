@@ -7,4 +7,6 @@ import java.util.List;
 public interface UserService {
 
     public List<UserVO> getUserList();
+
+    public UserVO getUserById(String login_id);
 }
