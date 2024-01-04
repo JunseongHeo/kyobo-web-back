@@ -10,6 +10,8 @@ public class UserVO {
     private String login_pw;
     private String name;
 
+
+
     public String getManage_no() {
         return manage_no;
     }

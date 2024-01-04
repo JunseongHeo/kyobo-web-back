@@ -24,4 +24,22 @@
         FROM kyobo_user
         WHERE LOGIN_ID = #{login_id}
   </select>
+
+    <insert id="createUser" parameterType="com.kyobo.dto.UserVO">
+        INSERT INTO kyobo_user(
+        MANAGE_NO,
+        LOGIN_ID,
+        LOGIN_PW,
+        NAME,
+        ADDRESS,
+        PHONE)
+        values(
+        now(),
+        #{LOGIN_ID},
+        #{LOGIN_PW},
+        #{NAME},
+        #{ADDRESS},
+        #{PHONE})
+    </insert>
+
 </mapper>

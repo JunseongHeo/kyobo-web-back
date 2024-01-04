@@ -7,3 +7,4 @@ CREATE TABLE `kyobo_user` (
   `PHONE` varchar(100) DEFAULT NULL COMMENT '사용자 핸드폰 번호',
   PRIMARY KEY (`MANAGE_NO`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
