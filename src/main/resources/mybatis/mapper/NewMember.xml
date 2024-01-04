@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kyobo.dao.NewMember">
+    <insert id="newMember" parameterType="com.kyobo.dto.NewMemberVO">
+        INSERT INTO kyobo_user(
+        MANAGE_NO,
+        LOGIN_ID,
+        LOGIN_PW,
+        NAME,
+        ADDRESS,
+        PHONE)
+        values(
+        #{manage_no},
+        #{login_id},
+        #{login_pw},
+        #{name},
+        #{address},
+        #{phone})
+    </insert>
+
+</mapper>
